@@ -1,5 +1,8 @@
 <template>
   <main class="pb-10">
+    <div class="text-4xl tracking-wide font-bold text-center pb-16">
+      Indian Premiere League Teams
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div v-for="(team, id) in teams" :key="id">
         <div class="max-w-md mx-auto">
@@ -7,7 +10,7 @@
         </div>
       </div>
     </div>
-    <div class="text-center">
+    <div class="text-center py-10">
       <button class="btn rounded-2xl" @click="showMore">
         {{ showingmore ? 'Show Less' : 'Show More' }}
       </button>
@@ -35,7 +38,7 @@ const allTeams = [
 export default {
   data() {
     return {
-      showingmore: true,
+      showingmore: false,
       teams: allTeams.slice(0, 6),
     }
   },

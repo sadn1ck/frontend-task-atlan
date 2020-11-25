@@ -62,8 +62,8 @@ a {
   @apply rounded-md;
   @apply px-3;
   @apply py-2;
-  border: 2px solid var(--color);
-  color: var(--color);
+  background-color: var(--color-primary);
+  color: var(--bg);
 }
 .dark-btn:focus {
   @apply outline-none;
