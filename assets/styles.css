@@ -12,7 +12,7 @@
   --bg: #1e2327;
 }
 * {
-  transition: all 0.5s;
+  transition: all 0.4s;
 }
 body {
   background-color: var(--bg-dark);
@@ -56,5 +56,18 @@ a {
   @apply outline-none;
 }
 .btn:hover {
+  @apply opacity-75;
+}
+.dark-btn {
+  @apply rounded-md;
+  @apply px-3;
+  @apply py-2;
+  border: 2px solid var(--color);
+  color: var(--color);
+}
+.dark-btn:focus {
+  @apply outline-none;
+}
+.dark-btn:hover {
   @apply opacity-75;
 }

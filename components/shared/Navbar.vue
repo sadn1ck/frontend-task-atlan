@@ -1,8 +1,8 @@
 <template>
   <header
-    class="nav-content flex flex-row bottom-0 sm:bottom-0 md:top-0 h-12 fixed w-full"
+    class="nav-content flex flex-row bottom-0 sm:bottom-0 md:top-0 h-16 fixed w-full"
   >
-    <NuxtLink to="/" class="p-3" @click="isOpen = false">
+    <NuxtLink to="/" class="p-3 my-auto">
       <span class="text-xl text-strong font-bold"> IPL Search </span>
     </NuxtLink>
     <!-- spacer -->
