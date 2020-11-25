@@ -1,0 +1,60 @@
+:root {
+  --bg-dark: #f3f5f4;
+  --bg: #dddddd;
+  --color: #243746;
+  --color-primary: #158876;
+}
+
+.dark-mode {
+  --color: #ebf4f1;
+  --color-primary: #41b38a;
+  --bg-dark: #10161b;
+  --bg: #1e2327;
+}
+* {
+  transition: all 0.5s;
+}
+body {
+  background-color: var(--bg-dark);
+  color: var(--color);
+}
+
+html {
+  @apply font-sans;
+  font-size: 16px;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+a {
+  color: var(--color-primary);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.text {
+  color: var(--color);
+}
+.text-secondary {
+  color: var(--color-primary);
+}
+.btn {
+  @apply rounded-md;
+  @apply px-3;
+  @apply py-2;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+.btn:focus {
+  @apply outline-none;
+}
+.btn:hover {
+  @apply opacity-75;
+}
