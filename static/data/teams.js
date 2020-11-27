@@ -1,0 +1,16 @@
+export default [
+  { name: 'Mumbai Indians', short: 'MI', wins: 0 },
+  { name: 'Pune Warriors', short: 'PU', wins: 0 },
+  { name: 'Kolkata Knight Riders', short: 'KKR', wins: 0 },
+  { name: 'Kochi Tuskers Kerala', short: 'KTK', wins: 0 },
+  { name: 'Rajasthan Royals', short: 'RR', wins: 0 },
+  { name: 'Gujarat Lions', short: 'GL', wins: 0 },
+  { name: 'Chennai Super Kings', short: 'CSK', wins: 0 },
+  { name: 'Rising Pune Supergiants', short: 'RPS', wins: 0 },
+  { name: 'Delhi Daredevils', short: 'DD', wins: 0 },
+  { name: 'Deccan Chargers', short: 'DEC', wins: 0 },
+  { name: 'Delhi Capitals', short: 'DC', wins: 0 },
+  { name: 'Sunrisers Hyderabad', short: 'SRH', wins: 0 },
+  { name: 'Royal Challengers Bangalore', short: 'RCB', wins: 0 },
+  { name: 'Kings XI Punjab', short: 'KXIP', wins: 0 },
+]

@@ -19,22 +19,8 @@
 </template>
 
 <script>
-const allTeams = [
-  { name: 'Mumbai Indians', short: 'MI' },
-  { name: 'Pune Warriors', short: 'PU' },
-  { name: 'Kolkata Knight Riders', short: 'KKR' },
-  { name: 'Kochi Tuskers Kerala', short: 'KTK' },
-  { name: 'Rajasthan Royals', short: 'RR' },
-  { name: 'Gujarat Lions', short: 'GL' },
-  { name: 'Chennai Super Kings', short: 'CSK' },
-  { name: 'Rising Pune Supergiants', short: 'RPS' },
-  { name: 'Delhi Daredevils', short: 'DD' },
-  { name: 'Deccan Chargers', short: 'DEC' },
-  { name: 'Delhi Capitals', short: 'DC' },
-  { name: 'Sunrisers Hyderabad', short: 'SRH' },
-  { name: 'Royal Challengers Bangalore', short: 'RCB' },
-  { name: 'Kings XI Punjab', short: 'KXIP' },
-]
+import allTeams from '~/static/data/teams'
+
 export default {
   data() {
     return {

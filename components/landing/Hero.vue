@@ -8,19 +8,25 @@
       </div>
     </div>
     <div class="flex justify-center space-x-5">
-      <a
-        href="/search"
+      <button
         class="inline-flex dark-btn text-lg uppercase tracking-wider"
+        @click="redirectToSearch"
       >
         Search
-      </a>
+      </button>
       <button class="btn text-lg uppercase tracking-wider">Subscribe</button>
     </div>
   </section>
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    redirectToSearch() {
+      this.$router.push('search')
+    },
+  },
+}
 </script>
 
 <style></style>
