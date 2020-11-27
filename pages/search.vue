@@ -1,7 +1,16 @@
 <template>
   <div>
-    <div class="py-20 px-8 md:px-16">
+    <div class="pt-20 px-8 md:px-16">
       <SearchBar />
+    </div>
+    <div class="fil text-center py-10 shadow-lg">
+      <button
+        class="rounded px-5 py-2 focus:outline-none"
+        @click="toggleFilter"
+      >
+        Filters
+      </button>
+      <div v-if="showFilter" class=""><filters /></div>
     </div>
     <div
       v-if="teams.length > 0"
@@ -21,10 +30,13 @@
 </template>
 
 <script>
+import Filters from '~/components/Filters.vue'
 import allTeams from '~/static/data/teams'
 export default {
+  components: { Filters },
   data() {
     return {
+      showFilter: false,
       teams: allTeams,
       searchTerm: this.$store.state.search.searchTerm,
     }
@@ -45,9 +57,10 @@ export default {
         const name = team.name.toLowerCase()
         return name.includes(newTerm)
       })
-      console.log(temp)
       this.teams = temp
-      console.log(this.teams)
+    },
+    toggleFilter() {
+      this.showFilter = !this.showFilter
     },
   },
 }
