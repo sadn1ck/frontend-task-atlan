@@ -2,6 +2,7 @@
   --bg-dark: #f3f5f4;
   --bg: #dddddd;
   --color: #243746;
+  --text-color: #243746;
   --color-primary: #158876;
 }
 
@@ -9,6 +10,7 @@
   --color: #ebf4f1;
   --color-primary: #41b38a;
   --bg-dark: #10161b;
+  --text-color: #243746;
   --bg: #1e2327;
 }
 * {
@@ -18,7 +20,9 @@ body {
   background-color: var(--bg-dark);
   color: var(--color);
 }
-
+input {
+  color: var(--text-color);
+}
 html {
   @apply font-sans;
   font-size: 16px;
@@ -70,4 +74,71 @@ a {
 }
 .dark-btn:hover {
   @apply opacity-75;
+}
+
+/* mouse */
+
+.mouse {
+  margin: 50px auto;
+  width: 100px;
+}
+.mouse-icon {
+  margin-left: 45px;
+  width: 25px;
+  height: 45px;
+  border: 2px solid var(--color);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.mouse-wheel {
+  height: 6px;
+  margin: 2px auto 0;
+  display: block;
+  width: 3px;
+  background-color: var(--color);
+  border-radius: 50%;
+  -webkit-animation: 1.6s ease infinite wheel-up-down;
+  -moz-animation: 1.6s ease infinite wheel-up-down;
+  animation: 1.6s ease infinite wheel-up-down;
+}
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
+}
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    margin-top: 20px;
+    opacity: 0;
+  }
 }

@@ -12,7 +12,7 @@ export default {
     },
   },
   mounted() {
-    this.$nuxt.$colorMode.preference = 'dark'
+    // this.$nuxt.$colorMode.preference = 'dark'
   },
   methods: {
     toggleDarkMode() {
