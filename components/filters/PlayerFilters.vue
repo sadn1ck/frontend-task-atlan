@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-1/2">
+  <div>
     <div class="py-2">Player Filters</div>
     <div class="py-2">
       <label for="height py-2">

@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2">
+  <div class="py-2 w-full md:w-1/2 mx-auto">
     <div class="mt-2 flex">
       <div class="flex-1">
         <label class="inline-flex items-center">
