@@ -1,20 +1,27 @@
-# frontend-chall
+# Atlan Frontend Intern Hiring Challenge
 
-## Build Setup
+## Steps taken to improve page load:
 
-```bash
-# install dependencies
-$ npm install
+- Using formats like webp for smaller size of images (although, I have used very few images at the moment)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+- Used TailwindCSS with PurgeCSS which helped cut down on unecessary CSS from reaching production
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+- Static site build which is generally faster
 
-# generate static project
-$ npm run generate
-```
+## Page Load @ 1.8s [(Result Here)](https://www.webpagetest.org/result/201128_DiHP_af5afa9000f4b2060d80b944dca7de24/)
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+![](./docs/page-load.png)
+
+## Pagespeed Insights
+
+![Desktop](./docs/desktop-pagespeed.png)
+
+![Mobile](./docs/mobile-pagespeed.png)
+
+## Lighthouse In-Browser
+
+![Browser Lighthouse](./docs/chrome-lighthouse.png)
+
+## Lighthouse Online (https://web.dev/measure/)
+
+![Browser Lighthouse](./docs/lighthouse-web.png)
