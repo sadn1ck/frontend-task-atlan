@@ -1,16 +1,37 @@
 export const state = () => ({
-  isTeamSelected: '',
-  isPlayerSelected: '',
+  picked: '',
+  players: {
+    bowl: '',
+    bathand: '',
+    name: '',
+    country: '',
+  },
+  team: {
+    won: 0,
+  },
 })
 export const mutations = {
-  update(state, updatedItem, c) {
-    if (c === 't') state.isTeamSelected = updatedItem
-    else if (c === 'p') state.isPlayerSelected = updatedItem
+  setPicked(state, newPicked) {
+    state.picked = newPicked
+  },
+  setPlayerBowl(state, newBowl) {
+    state.players.bathand = newBowl
+  },
+  reset(state) {
+    state.picked = ''
+    state.players = {
+      bowl: '',
+      bathand: '',
+      name: '',
+      country: '',
+    }
+    state.team = {
+      won: 0,
+    }
   },
 }
 export const getters = {
-  search(state, c) {
-    if (c === 't') return state.isTeamSelected
-    else if (c === 'p') return state.isPlayerSelected
+  search(state) {
+    return state.picked
   },
 }

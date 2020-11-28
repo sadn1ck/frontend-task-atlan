@@ -11,10 +11,7 @@
   --color-primary: #41b38a;
   --bg-dark: #10161b;
   --text-color: #243746;
-  --bg: #1e2327;
-}
-* {
-  transition: all 0.4s;
+  --bg: #2f3438;
 }
 body {
   background-color: var(--bg-dark);

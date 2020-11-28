@@ -25,7 +25,8 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "postcss": "^8.1.10",
-    "tailwindcss": "^2.0.1"
+    "tailwindcss": "^2.0.1",
+    "vue-slider-component": "^3.2.11"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^2.0.0",

@@ -1,7 +1,7 @@
 <template>
   <div class="flex items-center">
     <input
-      id="search"
+      id="searchbar"
       v-model="searchTerm"
       autocomplete="off"
       class="rounded-full w-full py-4 px-6 leading-tight border-0 outline-none shadow-lg focus:shadow-3xl focus:border-none"

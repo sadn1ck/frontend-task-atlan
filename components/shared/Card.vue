@@ -8,9 +8,9 @@
       />
       <div class="pt-6">
         <h3
-          class="tracking-widest px-6 text-secondary text-xs font-medium title-font"
+          class="tracking-widest px-6 text-secondary text-xs uppercase font-medium title-font"
         >
-          {{ overline }}
+          {{ subheading }}
         </h3>
         <h2 class="text-lg px-6 text-strong font-medium title-font mb-4">
           {{ title }}
@@ -28,7 +28,7 @@
 export default {
   name: 'Card',
   props: {
-    overline: {
+    subheading: {
       type: String,
       default: 'SUBTITLE',
     },

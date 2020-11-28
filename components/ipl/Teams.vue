@@ -6,7 +6,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
       <div v-for="(team, id) in teams" :key="id">
         <div class="max-w-md mx-auto">
-          <Card :overline="team.short" :title="team.name" />
+          <Card :subheading="team.short" :title="team.name" />
         </div>
       </div>
     </div>
