@@ -38,7 +38,7 @@
     <div v-if="teams.length > 0 || players.length > 0" class="">
       <div v-if="picked === 't'">
         <div class="text-4xl tracking-wide font-bold text-center py-16">
-          Indian Premiere League Teams
+          Indian Premier League Teams
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Card
