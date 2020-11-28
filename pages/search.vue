@@ -54,7 +54,9 @@
       </div>
     </div>
     <div v-else>
-      <div class="text-xl">No results found! Please refine your query!</div>
+      <div class="text-xl text-center px-5">
+        No results found! Please refine your query!
+      </div>
     </div>
   </div>
 </template>
@@ -96,7 +98,7 @@ export default {
         const temp = allPlayers.filter((player) => {
           const name = player.name.toLowerCase()
           const search = newTerm.toLowerCase()
-          console.log(name.includes(search), name)
+          // console.log(name.includes(search), name)
           return name.includes(search)
         })
         this.players = temp

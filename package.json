@@ -1,5 +1,6 @@
 {
   "name": "frontend-chall",
+  "description": "Search through IPL Teams and players with ease",
   "version": "1.0.0",
   "private": true,
   "scripts": {
