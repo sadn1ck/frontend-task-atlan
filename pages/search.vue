@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="space-y-10">
     <div class="pt-20 px-8 md:px-16">
       <SearchBar />
     </div>
-    <div class="filters rounded text-center py-10 shadow-lg mx-auto w-4/5">
+    <div class="filters rounded text-center py-5 mx-auto w-4/5">
       <button
         class="rounded-3xl px-3 py-2 hover:shadow-lg shadow-inner border-2 focus:outline-none hover:border-transparent"
         style="background-color: var(--bg-dark)"
@@ -51,11 +51,6 @@
       </div>
       <div v-else-if="picked === 'p'">
         <Players :players="players" />
-      </div>
-    </div>
-    <div v-else>
-      <div class="text-xl text-center px-5">
-        No results found! Please refine your query!
       </div>
     </div>
   </div>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="py-2">Player Filters</div>
     <div class="py-2">
       <label for="height py-2">
         <div class="py-2">Select Range of Height:</div>

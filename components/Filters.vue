@@ -35,7 +35,9 @@
       <div v-else-if="getPicked === 't'">
         <TeamFilters />
       </div>
-      <div v-else>Select an option to get more detailed filters</div>
+      <div class="px-5 py-5 uppercase tracking-wide" v-else>
+        Select an option to get more detailed filters
+      </div>
     </div>
   </div>
 </template>

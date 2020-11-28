@@ -1,6 +1,5 @@
 <template>
   <div>
-    <div class="py-2">Team Filters</div>
     <div class="py-2">
       <label for="wins py-2">
         <div class="py-2">Select Range of IPL Wins:</div>
