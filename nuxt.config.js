@@ -40,6 +40,18 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
   ],
+  pwa: {
+    meta: {
+      title: 'IPL Search',
+      author: '@sadn1ck',
+    },
+    manifest: {
+      name: 'IPL Search Database',
+      short_name: 'IPLDB',
+      lang: 'en',
+      theme_color: '#232323',
+    },
+  },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},

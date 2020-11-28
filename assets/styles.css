@@ -4,6 +4,8 @@
   --color: #243746;
   --text-color: #243746;
   --color-primary: #158876;
+  --font: 16px;
+  font-size: var(--font);
 }
 
 .dark-mode {
@@ -12,7 +14,13 @@
   --bg-dark: #10161b;
   --text-color: #243746;
   --bg: #2f3438;
+  font-size: var(--font);
 }
+
+* {
+  transition: all 0.1s;
+}
+
 body {
   background-color: var(--bg-dark);
   color: var(--color);

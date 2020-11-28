@@ -3,21 +3,33 @@
     <div class="pt-20 px-8 md:px-16">
       <SearchBar />
     </div>
-    <div class="filters text-center py-10 shadow-lg mx-auto w-4/5">
+    <div class="filters rounded text-center py-10 shadow-lg mx-auto w-4/5">
       <button
         class="rounded-3xl px-3 py-2 hover:shadow-lg shadow-inner border-2 focus:outline-none hover:border-transparent"
         style="background-color: var(--bg-dark)"
         @click="toggleFilter"
         @keydown.esc="toggleFilter"
       >
-        <span class="uppercase">Filters</span>
+        <span class="uppercase flex">
+          <span class="inline-flex">Filters</span>
+          <span v-if="!showFilter" class="pt-1 pl-2 inline-flex">
+            <Down />
+          </span>
+          <span v-else class="pt-1 pl-2 inline-flex"> <Up /> </span>
+        </span>
       </button>
       <button
+        v-if="showFilter"
         class="rounded-3xl px-3 py-2 hover:shadow-lg shadow-inner border-2 focus:outline-none hover:border-transparent hover:opacity-50"
         style="background-color: var(--bg-dark)"
         @click="resetFilter"
       >
-        <span class="uppercase">Reset</span>
+        <span class="uppercase flex">
+          <span class="upppercase inline-flex"> Reset</span>
+          <span class="pt-1 pl-1 upppercase inline-flex">
+            <Trash />
+          </span>
+        </span>
       </button>
       <div v-if="showFilter" class="">
         <Filters />
@@ -94,9 +106,12 @@ export default {
     resetFilter() {
       this.$store.commit('filters/reset')
       this.$store.commit('search/reset')
-      document.getElementById('searchbar').value = ''
-      document.getElementById('radio-player').checked = false
-      document.getElementById('radio-team').checked = false
+      if (!document.getElementById('searchbar').value === '')
+        document.getElementById('searchbar').value = ''
+      if (document.getElementById('radio-player'))
+        document.getElementById('radio-player').checked = false
+      if (!document.getElementById('radio-team'))
+        document.getElementById('radio-team').checked = false
     },
   },
 }

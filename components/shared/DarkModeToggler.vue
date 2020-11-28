@@ -1,7 +1,20 @@
 <template>
-  <button class="bottomright p-3 focus:outline-none" @click="toggleDarkMode">
-    {{ isDarkModeOn ? '🔆' : '🌙' }}
-  </button>
+  <div>
+    <button
+      v-if="isDarkModeOn"
+      class="bottomright p-3 focus:outline-none"
+      @click="toggleDarkMode"
+    >
+      <Light />
+    </button>
+    <button
+      v-else
+      class="bottomright p-3 focus:outline-none"
+      @click="toggleDarkMode"
+    >
+      <Dark />
+    </button>
+  </div>
 </template>
 
 <script>
