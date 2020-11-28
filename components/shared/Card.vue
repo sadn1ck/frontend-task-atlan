@@ -1,5 +1,5 @@
 <template>
-  <div class="p-5 flex flex-grow-0">
+  <div class="mx-auto py-5 flex flex-grow-0">
     <div class="card bg-gray-800 rounded-lg pb-4">
       <img
         class="hidden md:block h-40 rounded w-full object-cover object-center mb-6"

@@ -95,7 +95,9 @@ export default {
       } else if (choice === 'p') {
         const temp = allPlayers.filter((player) => {
           const name = player.name.toLowerCase()
-          return name.includes(newTerm)
+          const search = newTerm.toLowerCase()
+          console.log(name.includes(search), name)
+          return name.includes(search)
         })
         this.players = temp
       }
